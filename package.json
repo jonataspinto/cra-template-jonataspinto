@@ -1,7 +1,7 @@
 {
     "name": "cra-template-jonataspinto-template",
     "author": "jonatas pinto",
-    "version": "1.0.3",
+    "version": "1.0.5",
     "keywords": [
       "react",
       "create-react-app",
@@ -11,8 +11,8 @@
     "main": "template.json",
     "repository": {
       "type": "git",
-      "url": "https://github.com/facebook/create-react-app.git",
-      "directory": "packages/jonataspinto-template"
+      "url": "https://github.com/jonataspinto/cra-template-jonataspinto-template",
+      "directory": "packages/cra-template"
     },
     "license": "MIT",
     "engines": {
