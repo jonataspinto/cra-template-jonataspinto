@@ -48,7 +48,7 @@ module.exports = plop => {
             type: 'append',
             path: 'src/components/index.js',
             pattern: `/* PLOP_INJECT_IMPORT */`,
-            template: `import {{pascalCase name}} from './{{pascalCase name}}';`,
+            template: `import { {{pascalCase name}} } from './{{pascalCase name}}';`,
         },
         {
             type: 'append',
@@ -57,6 +57,77 @@ module.exports = plop => {
             template: `\t{{pascalCase name}},`,
         },
         // end import and export component in index folder
+
+      ],
+    });
+
+    plop.setGenerator('container', {
+      description: 'Create a container',
+      prompts: [
+        {
+          type: 'input',
+          name: 'name',
+          message: 'What is your container name?'
+        },
+      ],
+      actions: [
+        //structure component
+        {
+          type: 'add',
+          path: 'src/containers/{{pascalCase name}}/{{pascalCase name}}.js',
+          templateFile: 'plop-templates/container/Container.js.hbs',
+        },
+        {
+            type: 'add',
+            path:'src/containers/{{pascalCase name}}/{{pascalCase name}}Styled.js',
+            templateFile:'plop-templates/container/ContainerStyle.js.hbs'
+        },
+        {
+            type: 'add',
+            path: 'src/containers/{{pascalCase name}}/index.js',
+            templateFile: 'plop-templates/component/indexOfComponent.js.hbs',
+        },
+        // end structure component
+
+        // import and export component in index folder
+        {
+            type: 'add',
+            path: 'src/containers/index.js',
+            templateFile: 'plop-templates/component/injectable-index.js.hbs',
+            skipIfExists: true,
+        },
+        {
+            type: 'append',
+            path: 'src/containers/index.js',
+            pattern: `/* PLOP_INJECT_IMPORT */`,
+            template: `import { {{pascalCase name}} } from './{{pascalCase name}}';`,
+        },
+        {
+            type: 'append',
+            path: 'src/containers/index.js',
+            pattern: `/* PLOP_INJECT_EXPORT */`,
+            template: `\t{{pascalCase name}},`,
+        },
+        // end import and export component in index folder
+
+        {
+          type: 'add',
+          path: 'src/routes.js',
+          templateFile: 'plop-templates/routes.js.hbs',
+          skipIfExists: true,
+      },
+      {
+          type: 'append',
+          path: 'src/routes.js',
+          pattern: `/* PLOP_ROUTE_IMPORT */`,
+          template: `\t{{pascalCase name}},`,
+      },
+      {
+          type: 'append',
+          path: 'src/routes.js',
+          pattern: `/* PLOP_INJECT_ROUTE */`,
+          template: `\t\t\t\t\t<Route exact path="/{{name}}" component={ {{pascalCase name}} } />,`,
+      },
 
       ],
     });
