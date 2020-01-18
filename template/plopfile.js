@@ -126,7 +126,7 @@ module.exports = plop => {
           type: 'append',
           path: 'src/routes.js',
           pattern: `/* PLOP_INJECT_ROUTE */`,
-          template: `\t\t\t\t\t<Route exact path="/{{name}}" component={ {{pascalCase name}} } />,`,
+          template: `\t\t\t\t\t<Route exact path="/{{name}}" component={ {{pascalCase name}} } />`,
       },
 
       ],
