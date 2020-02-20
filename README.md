@@ -12,7 +12,7 @@ yarn add prettier eslint babel-eslint eslint-config-airbnb eslint-config-prettie
 
 Open your terminal and run:
 ```shell
-npx create-react-app YOUR_PROJECT_NAME --template jonataspinto-template
+npx create-react-app YOUR_PROJECT_NAME --template jonataspinto
 ```
 
 This will create a project with the following libs:
