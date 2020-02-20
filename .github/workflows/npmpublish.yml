@@ -1,8 +1,9 @@
 name: NPM PUBLISH
 
 on:
-  release:
-    types: [created]
+  push:
+    branches:
+    - master
 
 jobs:
   publish-npm:
