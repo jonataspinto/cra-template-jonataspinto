@@ -8,7 +8,7 @@ You can read more about custom-templates on the [oficial documentation](https://
 yarn add prettier eslint babel-eslint eslint-config-airbnb eslint-config-prettier eslint-plugin-import eslint-plugin-import-helpers eslint-plugin-jsx-a11y eslint-plugin-prettier eslint-plugin-react eslint-plugin-react-hooks -D
 ```
 
-## how to use this template???
+## how to use this template?
 
 Open your terminal and run:
 ```shell
