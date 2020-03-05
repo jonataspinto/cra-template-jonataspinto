@@ -2,9 +2,9 @@ Esse é um template para [Create React App](https://github.com/facebook/create-r
 
 Você pode saber masi sobre custom-templates na [Documentação Oficial](https://create-react-app.dev/docs/custom-templates/)
 
-## how to use this template?
+## Como usar esse template?
 
-Open your terminal and run:
+Abra seu terminal e rode:
 ```shell
 npx create-react-app YOUR_PROJECT_NAME --template jonataspinto-template
 ```
@@ -16,8 +16,8 @@ Isso criará um projeto com as seguintes libs:
 * [prop-types](https://github.com/facebook/prop-types)
 * [react-redux](https://redux.js.org/introduction/getting-started)
 * [react-router-dom](https://reacttraining.com/react-router/web/guides/quick-start)
-* [redux] (https://redux.js.org/)
-* [redux-thunk] (https://github.com/reduxjs/redux-thunk)
+* [redux](https://redux.js.org/)
+* [redux-thunk](https://github.com/reduxjs/redux-thunk)
 * [styled-components](https://www.styled-components.com/)
 * [styled-icons](https://github.com/jacobwgillespie/styled-icons)
 * [styled-media-query](https://www.npmjs.com/package/styled-media-query)
@@ -30,11 +30,12 @@ Isso criará um projeto com as seguintes libs:
 # instalando devDependencies manualmente 
 yarn add prettier eslint babel-eslint eslint-config-prettier eslint-plugin-prettier eslint-plugin-import-helpers -D
 ```
-
+> No proximo ponto sugiro usar o famoso modelo da Airbnd.
 ```shell
 # gerando o eslint.json 
 yarn eslint --init
 ```
+
 Sugestões de configuraçoes:
 
 * [.eslintrc.json](https://gist.github.com/jonataspinto/74b2dbb540d05abbdb4e142cee992e2f)
