@@ -1,6 +1,6 @@
 Esse é um template para [Create React App](https://github.com/facebook/create-react-app) com algumas dependências configuradas.
 
-Você pode saber masi sobre custom-templates na [Documentação Oficial](https://create-react-app.dev/docs/custom-templates/)
+Você pode saber mais sobre custom-templates na [Documentação Oficial](https://create-react-app.dev/docs/custom-templates/)
 
 ## Como usar esse template?
 
@@ -24,7 +24,7 @@ Isso criará um projeto com as seguintes libs:
 
 
 
-> [IMPORTANTE] - dependencias de desenvolvimento (devDependencies) ainda nao são suportadas no create-react-app templates. Portanto, se você deseja ter o ESLint e o Prettier configurados em seu projeto, siga as etapas abaixo:
+> [IMPORTANTE] - dependencias de desenvolvimento (devDependencies) ainda não são suportadas no create-react-app templates. Portanto, se você deseja ter o ESLint e o Prettier configurados em seu projeto, siga as etapas abaixo:
 
 ```shell
 # instalando devDependencies manualmente 
