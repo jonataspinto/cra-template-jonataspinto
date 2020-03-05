@@ -42,5 +42,5 @@ Sugestões de configuraçoes:
 * [.prettierrc](https://gist.github.com/jonataspinto/64e386614cdfa1b8d249a2b458e08a2d)
 * [.editorconfig](https://gist.github.com/jonataspinto/66567d0530aba416d2ea4389e99d7605)
 
-> [IMPORTANTE] - não se esqueça de instalar e ativar as extenssões de eslint e prettier no seu vsCode.
+> [IMPORTANTE] - não se esqueça de instalar e ativar as extensões de eslint e prettier no seu vsCode.
 
